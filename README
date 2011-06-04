@@ -1,0 +1,18 @@
+A basic Perl script which takes all tcx files starting with the word
+"activity" and merges them together.
+
+The point of this script is to take the 89 runs I've done using my
+Garmin Forerunner 405 and copy them to Endomondo.  I shall be
+continuing to use my Garmin, but the Endomondo web site has better
+social aspects to it, in some ways, so I figure I shall use both for
+the time being.
+
+Anyway, to use the script, all you do is export all the activities
+from the Garmin Connect web site that you want to migrate, get them
+all in the same directory, and then from within that directory, call
+the merge_tcx_files script.  It will create a file called merged.tcx
+which contains all of your activities in one file.
+
+Note that Endomondo only accept tcx files up to 6MB, so if you have
+activities totalling more than that, you'll need to merge them up in
+blocks of no more than 6MB.
